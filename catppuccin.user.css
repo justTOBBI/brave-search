@@ -1,0 +1,274 @@
+/* ==UserStyle==
+@name           Catppuccin Brave Search
+@namespace      github.com/catppuccin/brave-search
+@version        1.0.0
+@description    Soothing pastel theme for Brave Search
+@author         Catppuccin
+@updateURL      https://github.com/catppuccin/brave-search/raw/main/catppuccin.user.css
+@preprocessor   stylus
+@var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
+==/UserStyle== */
+@-moz-document domain("search.brave.com") {
+      if (theme=="Latte") {
+        $type = light
+        
+        $rosewater = #dc8a78
+        $flamingo = #dd7878
+        $pink = #ea76cb
+        $mauve = #8839ef
+        $red = #d20f39
+        $maroon = #e64553
+        $peach = #fe640b
+        $yellow = #df8e1d
+        $green = #40a02b
+        $teal = #179299
+        $sky = #04a5e5
+        $sapphire = #209fb5
+        $blue = #1e66f5
+        $lavender = #7287fd
+        $text = #4c4f69
+        $subtext1 = #5c5f77
+        $subtext0 = #6c6f85
+        $overlay2 = #7c7f93
+        $overlay1 = #8c8fa1
+        $overlay0 = #9ca0b0
+        $surface2 = #acb0be
+        $surface1 = #bcc0cc
+        $surface0 = #ccd0da
+        $base = #eff1f5
+        $mantle = #e6e9ef
+        $crust = #dce0e8
+    }
+    if (theme=="Frappe") {
+        $type = dark
+        
+        $rosewater = #f2d5cf
+        $flamingo = #eebebe
+        $pink = #f4b8e4
+        $mauve = #ca9ee6
+        $red = #e78284
+        $maroon = #ea999c
+        $peach = #ef9f76
+        $yellow = #e5c890
+        $green = #a6d189
+        $teal = #81c8be
+        $sky = #99d1db
+        $sapphire = #85c1dc
+        $blue = #8caaee
+        $lavender = #babbf1
+        $text = #c6d0f5
+        $subtext1 = #b5bfe2
+        $subtext0 = #a5adce
+        $overlay2 = #949cbb
+        $overlay1 = #838ba7
+        $overlay0 = #737994
+        $surface2 = #626880
+        $surface1 = #51576d
+        $surface0 = #414559
+        $base = #303446
+        $mantle = #292c3c
+        $crust = #232634
+    }
+    else if (theme=="Macchiato") {
+        $type = dark
+        
+        $rosewater = #f4dbd6
+        $flamingo = #f0c6c6
+        $pink = #f5bde6
+        $mauve = #c6a0f6
+        $red = #ed8796
+        $maroon = #ee99a0
+        $peach = #f5a97f
+        $yellow = #eed49f
+        $green = #a6da95
+        $teal = #8bd5ca
+        $sky = #91d7e3
+        $sapphire = #7dc4e4
+        $blue = #8aadf4
+        $lavender = #b7bdf8
+        $text = #cad3f5
+        $subtext1 = #b8c0e0
+        $subtext0 = #a5adcb
+        $overlay2 = #939ab7
+        $overlay1 = #8087a2
+        $overlay0 = #6e738d
+        $surface2 = #5b6078
+        $surface1 = #494d64
+        $surface0 = #363a4f
+        $base = #24273a
+        $mantle = #1e2030
+        $crust = #181926
+    }
+    else if (theme=="Mocha") {
+        $type = dark
+    
+        $rosewater = #f5e0dc
+        $flamingo = #f2cdcd
+        $pink = #f5c2e7
+        $mauve = #cba6f7
+        $red = #f38ba8
+        $maroon = #eba0ac
+        $peach = #fab387
+        $yellow = #f9e2af
+        $green = #a6e3a1
+        $teal = #94e2d5
+        $sky = #89dceb
+        $sapphire = #74c7ec
+        $lavender = #b4befe
+        $blue = #89b4fa
+        $text = #cdd6f4
+        $subtext1 = #bac2de
+        $subtext0 = #a6adc8
+        $overlay2 = #9399b2
+        $overlay1 = #7f849c
+        $overlay0 = #6c7086
+        $surface2 = #585b70
+        $surface1 = #45475a
+        $surface0 = #313244
+        $base = #1e1e2e
+        $mantle = #181825
+        $crust = #11111b
+    }
+    
+   
+}
+
+    @media (prefers-color-scheme: dark)
+        :root:not(.light) {
+            color-scheme: dark;
+            --body-bg: $base;
+            --bg-glassy: $crust;
+            --bg-1: $base;
+            --bg-2: $base;
+            --bg-02: $base;
+            --bg-04: $base;
+            --bg-green: rgba($green, 0.2);
+            --bg-blue: #d0e2ff;
+            --bg-red: #ffd6e8;
+            --bg-favicon: #4B5062;
+            --bg-scrim: rgba(34, 37, 49, 0.6);
+            --bg-form-control-selected: $overlay1;
+            --bg-form-control-unselected: $overlay1;
+            --form-control-selected: #4436E1;
+            --form-control-hover: #D0D2F7;
+            --form-control-focus: #A0A5EB;
+            --settings-header-bg: $surface0;
+            --settings-header-text: $text;
+            --settings-header-icon: $subtext0;
+            --settings-widget-text: #828D9F;
+            --settings-item-text: $text;
+            --settings-item-icon: #A1A5E4;
+            --settings-item-border: #2B3445;
+            --settings-item-border-2: #3F4C63;
+            --settings-dark-theme-btn: #343A40;
+            --settings-btn-bg: $overlay0;
+            --settings-btn-text: #CFD6E4;
+            --settings-widget-outline: #3F4C63;
+            --settings-independent-score: #7078FF;
+            --settings-global-score: #FF845D;
+            --brave-supporter-bg: #252730;
+            --brave-supporter-text: #2267BE;
+            --context-menu-header-border: #58667E;
+            --color-primary: $text;
+            --color-primary-2: $subtext0;
+            --color-primary-3: $subtext1;
+            --color-white: #ffffff;
+            --color-gray-2: #a6b0c3;
+            --color-gray-3: $subtext1;
+            --color-gray-4: #7E8790;
+            --color-gray-5: #7E8790;
+            --color-gray-6: #828d9f;
+            --color-green: $green;
+            --color-red: $red;
+            --color-blue: $blue;
+            --info-color: $red;
+            --link-primary: $text;
+            --link-secondary: $subtext0;
+            --link-visited: rgba($mauve, 0.5);
+            --snippet-url: #6E798D;
+            --separator-dot: #808a9d;
+            --theme-purple: #7675fd;
+            --theme-yellow: #F8BE2D;
+            --border-color: $overlay0;
+            --blurple-300: #A0A5EB;
+            --text-01: $text;
+            --text-02: $subtext0;
+            --text-03: $subtext1;
+            --interactive-04: #353DAB;
+            --interactive-05: #4C54D2;
+            --interactive-06: #737ADE;
+            --interactive-07: #F0F2FF;
+            --interactive-08: #5E6175;
+            --focus-border: #555889;
+            --divider-01: #3B3E4F;
+            --disabled: #343A40;
+            --btn-filled-bg: var(--interactive-05);
+            --btn-filled-bg-hover: var(--interactive-06);
+            --btn-filled-text-active: rgba(255, 255, 255, 0.7);
+            --btn-filled-bg-active: rgba(115, 122, 222, 0.7);
+            --btn-filled-text-disabled: #677078;
+            --btn-outline-border: var(--interactive-08);
+            --btn-outline-border-hover: var(--interactive-06);
+            --btn-outline-text: var(--interactive-07);
+            --btn-outline-text-hover: var(--blurple-300);
+            --btn-outline-text-active: rgba(160, 165, 235, 0.7);
+            --btn-outline-border-active: rgba(115, 122, 222, 0.7);
+            --btn-outline-text-disabled: #495057;
+            --btn-icon-svg-hover: var(--blurple-300);
+            --btn-icon-bg-hover: rgba(160, 165, 235, 0.32);
+            --btn-icon-svg-active: rgba(160, 165, 235, 0.7);
+            --code-bg-0: #2F313C;
+            --code-border: #22232A;
+            --code-color-1: #525964;
+            --code-color-2: #ACBBD5;
+            --code-color-3: #7FA569;
+            --code-color-4: #5198D4;
+            --code-color-5: #B26AC7;
+            --shadow-1: 0 1px 1px 0 rgba(66, 66, 66, 0.08), 0 1px 3px 1px rgba(66, 66, 66, 0.16);
+            --shadow-2: 0 1px 6px rgba(32, 33, 36, 0.28);
+            --search-bgd-01: $surface0;
+            --search-bgd-02: $base;
+            --search-bgd-03: $mantle;
+            --search-bgd-04: $surface0;
+            --search-bgd-05: $base;
+            --search-bgd-06: $base;
+            --search-bgd-07: $base;
+            --search-bgd-08: $base;
+            --search-line-01: #305cea;
+            --search-line-02: #636876;
+            --search-text-01: $text;
+            --search-text-02: $subtext0;
+            --search-text-03: $subtext0;
+            --search-text-04: #9599A9;
+            --search-text-05: #7E8292;
+            --search-text-06: #636876;
+            --search-text-09: #997B08;
+            --search-text-10: #FB542B;
+            --search-interactive-01: $blue;
+            --search-interactive-02: $mauve;
+            --search-interactive-03: $purple;
+            --search-interactive-04: $mauve;
+            --search-interactive-05: $blue;
+            --gray-30: #2E3039;
+            --gray-60: #6B7084;
+            --gray-90: #C6C8D0;
+            --gray-110: #EEEFF1;
+            --gray-120: #F6F6F7;
+            --secondary-90: #C3C6F0;
+    }
+    
+  .snippet {
+        border-radius: 8px;
+  }
+
+  .searchbox-wrapper {
+      color: $text;
+  }
+  
+  .infobox {
+      border-radius: 8px;
+  }
+  
+  #nav-tabs ul li.active a:after {
+      background: linear-gradient(305.95deg, $mauve 0%, $peach 60%)
+  }
